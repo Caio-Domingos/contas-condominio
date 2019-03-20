@@ -27,7 +27,11 @@
       <div class="row border center  border-dark rounded">
 
          <div class="col-3 p-5">
-            <form class="align-middle" method="post" action="calculo.php">
+            <form class="align-middle" method="post" action="insere.php">
+               <div class="form-group">
+                  <label for="">Data</label>
+                  <input type="date" class="form-control" id="" name="data">
+               </div>
                <div class="form-group">
                   <label for="">Cemig</label>
                   <input type="text" class="form-control" id="" name="cemig" placeholder="Valor Cemig">
@@ -65,21 +69,6 @@
                <button type="submit" class="btn btn-dark">Calcular <i>
                   </i></button>
             </form>
-         </div>
-
-         <div class="row center">
-            <?php
-               if(isset($_GET['resultado'])){
-                  ?>
-                     <h1 class="display-4">Resultado: <?=$_GET['resultado']?></h1>
-                  <?php
-               }else{
-                  ?>
-                     <h1 class="display-4">Resultado:</h1> 
-                  <?php	
-               }
-            ?>
-               
          </div>
       </div>
    </div>
