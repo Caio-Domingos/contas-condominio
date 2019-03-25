@@ -1,0 +1,10 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+#alert-inclusao {
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */

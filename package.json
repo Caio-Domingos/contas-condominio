@@ -1,0 +1,24 @@
+{
+  "name": "adiciona-produto-php",
+  "version": "1.0.0",
+  "description": "Desenvolvimento Web aula 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caio-Domingos/adiciona-produto-php.git"
+  },
+  "author": "Caio Domingos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caio-Domingos/adiciona-produto-php/issues"
+  },
+  "homepage": "https://github.com/Caio-Domingos/adiciona-produto-php#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
+  }
+}

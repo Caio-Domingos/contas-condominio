@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculos do condomínio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="public/stylesheets/estatisticas.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- Inicio do header -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark flex-column bg-dark flex-md-row bd-navbar .justify-content-lg-center"
+      >
+        <a class="navbar-brand" href="#">Contas do condomínio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Pagina inicial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resultados.html">Resultados</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./estatisticas.html"
+                >Estatísticas <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Fim do header -->
+
+    <!-- Inicio do main -->
+    <main class="container mt-3 d-flex justify-content-center flex-column">
+      <h4 class="text-center text-primary mb-5">Relatórios</h4>
+      <h5 class="text-center">Mês com maior valor da conta de:</h5>
+      <div class="row my-3">
+        <div class="col">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Água</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-mais-agua"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-2">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Luz</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-mais-luz"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h5 class="text-center">Mês com menor valor da conta de:</h5>
+      <div class="row my-3">
+        <div class="col">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Água</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-menos-agua"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-2">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Luz</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-menos-luz"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h5 class="text-center">Médias</h5>
+      <div class="row my-3">
+        <div class="col">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Totais</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-total"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-2">
+          <div class="card w-100">
+            <div class="card-body">
+              <h5 class="card-title text-center">Por morador</h5>
+              <p
+                class="card-text h5 text-black-50 text-center"
+                id="campo-moradores"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="public/js/estatisticas.js"></script>
+</html>
